@@ -6,7 +6,7 @@
 
 ### Step 1: Install & Configure vendor libraries/packages
 
-**A) Install Python * virtual environment**
+**A) Install Python & virtual environment**
 
 ```
 $ [sudo] apt-get install python3
@@ -19,7 +19,7 @@ $ [sudo] pip3 install virtualenv
 ## OR any virtual environment setup of your choice ##
 ```
 
-**B) Create project directory of your choice & activate virtual environment
+**B) Create project directory of your choice & activate virtual environment**
 ```
 $ mkdir serverless-workshop && cd serverless-workshop
 
@@ -29,15 +29,17 @@ serverless-workshop>$  which python3
 
 ```
 serverless-workshop>$  virtualenv -p /usr/local/bin/python3 serverless-workshop
+>
 ```
-> Running virtualenv with interpreter /usr/local/bin/python3
-> Already using interpreter /usr/local/opt/python/bin/python3.7
-> Using base prefix '/usr/local/Cellar/python/3.7.4/Frameworks/Python.framework/Versions/3.7'
-> New python executable in /Users/sejal/serverless/serverless-workshop/serverless-workshop/bin/python3.7
-> Also creating executable in /Users/sejal/serverless/serverless-workshop/serverless-workshop/bin/python
-> Installing setuptools, pip, wheel...
-> done.
-
+```
+Running virtualenv with interpreter /usr/local/bin/python3
+Already using interpreter /usr/local/opt/python/bin/python3.7
+Using base prefix '/usr/local/Cellar/python/3.7.4/Frameworks/Python.framework/Versions/3.7'
+New python executable in /Users/sejal/serverless/serverless-workshop/serverless-workshop/bin/python3.7
+Also creating executable in /Users/sejal/serverless/serverless-workshop/serverless-workshop/bin/python
+Installing setuptools, pip, wheel...
+done.
+```
 ```
 serverless-workshop>$  source serverless-workshop/bin/activate
 ```
@@ -85,7 +87,7 @@ Update `~/.bash_profile` or `~/.bashrc` and/or `$PATH` env variable, if required
 
 ### Step 2: Configure AWS / IAM access on local
 
-**A) Install ** [aws cli](https://github.com/aws/aws-cli#installation) (OPTIONAL)
+**A) Install** [aws cli](https://github.com/aws/aws-cli#installation) (OPTIONAL)
 
 *MAC USERS*
 ```
@@ -96,7 +98,7 @@ $ aws --version
 Based on the email with the creds you must have received for this workshop, configure your IAM key-pair. 
 Contact Administrator/workshop owner for any issues.
 
-**B) Configure awscli **
+**B) Configure awscli**
 ```
 $ aws configure --profile <any-profile-name>
 ```
@@ -112,36 +114,37 @@ $ aws configure --profile <any-profile-name>
 $ cat ~/.aws/credentials
 >
 ```
+> <any profile name>
+  
+> AWS_ACCESS_KEY_ID=`<ACCESS-KEY-ID>`
+  
+> AWS_SECRET_ACCESS_KEY=`<SECRET-KEY>`
 
-```
-[<any profile name>]
-AWS_ACCESS_KEY_ID=<ACCESS-KEY-ID>
-AWS_SECRET_ACCESS_KEY=<SECRET-KEY>
-```
 
 ### Step 3: Configure serverless
 
-**A) Configure serverless framework with AWS
+**A) Configure serverless framework with AWS**
 ```
 $ serverless config credentials --provider aws --key <ACCESS-KEY-ID> --secret <SECRET-KEY> --profile <any-profile-name>
-
 $ cat ~/.aws/credentials
+>
 ```
-```
-[<any-profile-name>]
-AWS_ACCESS_KEY_ID=<ACCESS-KEY-ID>
-AWS_SECRET_ACCESS_KEY=<SECRET-KEY>
-```
+> <any-profile-name>
+  
+> AWS_ACCESS_KEY_ID=`<ACCESS-KEY-ID>`
+  
+> AWS_SECRET_ACCESS_KEY=`<SECRET-KEY>`
+
 
 **B) Test AWS connection**
 
-To check if your local is connected to *`AWS-Postman-Staging`* account
+To check if your local is connected to *`AWS-Workshop`* account
 ```
 $ aws s3 ls
 ## OR ##
 $ aws s3 ls --profile <any-profile-name>
 ```
-You should see a list of existing buckets present on this *`AWS-account`*. 
+You should see a list of existing buckets present on this *`AWS-Workshop`*. 
 
 ### References
 
