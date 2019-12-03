@@ -157,6 +157,14 @@ $ aws s3 ls
 $ aws s3 ls --profile <any-profile-name>
 ```
 You should see a list of existing buckets present on this *`AWS-Workshop`*. 
+Something like-
+```
+$ aws s3 ls
+2017-11-08 16:24:48 fl-operations-elb-logs
+2017-06-01 15:35:32 fl-ops-mounts
+2017-04-28 14:51:06 fl-statefiles-ops
+2019-12-02 15:11:02 serverless-rest-api-with-serverlessdeploymentbuck-11s251qwtj8w8
+```
 
 ### References
 
