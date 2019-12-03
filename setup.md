@@ -65,6 +65,8 @@ serverless-workshop>$  source serverless-workshop/bin/activate
 ```
 > (serverless-workshop) serverless-workshop>$
 
+The following setup will now happen inside the virtual environment you created. This is to avoid overriding any default settings or lib versions.
+
 
 **C) Install node/npm**
 
@@ -165,6 +167,11 @@ $ aws s3 ls
 2017-04-28 14:51:06 fl-statefiles-ops
 2019-12-02 15:11:02 serverless-rest-api-with-serverlessdeploymentbuck-11s251qwtj8w8
 ```
+
+## Step 4:
+
+To exit virtual environment: `deactivate`
+
 
 ### References
 
