@@ -47,6 +47,7 @@ serverless-workshop>$  which python3
 ```
 > /usr/local/bin/python3
 
+Create a new virtual environment
 ```
 serverless-workshop>$  virtualenv -p /usr/local/bin/python3 serverless-workshop
 >
@@ -60,6 +61,8 @@ Also creating executable in /Users/sejal/serverless/serverless-workshop/serverle
 Installing setuptools, pip, wheel...
 done.
 ```
+
+Activate this virtual environment (virtual environment persist to be reused at a later time)
 ```
 serverless-workshop>$  source serverless-workshop/bin/activate
 ```
