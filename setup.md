@@ -6,16 +6,36 @@
 
 ### Step 1: Install & Configure vendor libraries/packages
 
-**A) Install Python & virtual environment**
+**A) Install Brew & Python**
+
+Install `brew` (or your favourite package manager):
+```
+$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+$ brew update
+$ brew doctor
+```
+
+Install Python & virtual environment:
 
 ```
+$ brew install python
+$ pip install --user pipenv
+$ python3 -V
+> Python 3.7.4
+
+## OR (if you prefer apt-get) ##
+
 $ [sudo] apt-get install python3
 $ [sudo] apt-get install python3-pip
-$ python3 -v
+$ python3 -V
+> Python 3.7.4
 
 # Update ~/.bash_profile or ~/.bashrc or $PATH variable, if required, to set default python version
+# Make sure you use 3.6+
 
 $ [sudo] pip3 install virtualenv
+
 ## OR any virtual environment setup of your choice ##
 ```
 
@@ -49,14 +69,6 @@ serverless-workshop>$  source serverless-workshop/bin/activate
 **C) Install node/npm**
 
 *MAC USERS*
-
-Install `brew`:
-```
-$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
-$ brew update
-$ brew doctor
-```
 
 Install `node`/`npm`:
 ```
