@@ -150,7 +150,6 @@ You should see a list of existing buckets present on this *`AWS-Workshop`*.
 
 For more info:
 
-https://serverless.com/framework/docs/providers/aws/guide/quick-start/
 https://serverless.com/framework/docs/providers/aws/guide/installation/
 https://serverless.com/framework/docs/providers/aws/guide/credentials/
 https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html
