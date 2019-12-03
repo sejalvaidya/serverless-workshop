@@ -65,7 +65,7 @@ serverless-workshop>$  source serverless-workshop/bin/activate
 ```
 > (serverless-workshop) serverless-workshop>$
 
-The following setup will now happen inside the virtual environment you created. This is to avoid overriding any default settings or lib versions.
+Virtual environment is activated. The rest of the setup will now happen inside the virtual environment you created. This is to avoid overriding any default settings or lib versions.
 
 
 **C) Install node/npm**
