@@ -162,6 +162,9 @@ You should see a list of existing buckets present on this *`AWS-Workshop`*.
 Something like-
 ```
 $ aws s3 ls
+>
+```
+```
 2017-11-08 16:24:48 fl-operations-elb-logs
 2017-06-01 15:35:32 fl-ops-mounts
 2017-04-28 14:51:06 fl-statefiles-ops
