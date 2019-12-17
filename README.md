@@ -1,3 +1,0 @@
-# serverless-workshop
-
-WIP
