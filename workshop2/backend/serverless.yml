@@ -1,4 +1,4 @@
-service: serverless-rest-api-with-dynamodb
+service: serverless-rest-api-with-dynamodb-sejal
 
 frameworkVersion: ">=1.1.0 <2.0.0"
 
