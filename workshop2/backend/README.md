@@ -4,11 +4,9 @@ description: 'This example demonstrates how to setup a RESTful Web Service allow
 layout: Doc
 framework: v1
 platform: AWS
-language: Python
-authorLink: 'https://github.com/godfreyhobbs'
-authorName: 'Godfrey Hobbs'
-authorAvatar: 'https://avatars1.githubusercontent.com/u/8434141?v=4&s=140'
+language: Python 3.7
 -->
+
 # Serverless REST API
 
 This example demonstrates how to setup a [RESTful Web Services](https://en.wikipedia.org/wiki/Representational_state_transfer#Applied_to_web_services) allowing you to create, list, get, update and delete Todos. DynamoDB is used to store the data. This is just an example and of course you could use any data storage as a backend.
@@ -28,8 +26,7 @@ The idea behind the `todos` directory is that in case you want to create a servi
 
 ## Setup
 
-Dev environment setup:
-https://github.com/sejalvaidya/serverless-workshop/blob/master/setup.md
+If the dev environemnt is not already setup, please find the instructions [here](https://github.com/sejalvaidya/serverless-workshop/blob/master/setup.md)
 
 
 ## Deploy
