@@ -6,7 +6,7 @@
 
 ### Step 1: Install & Configure vendor libraries/packages
 
-**A) Install Python * virtual environment**
+**A) Install Python virtual environment**
 
 ```
 $ [sudo] apt-get install python3
