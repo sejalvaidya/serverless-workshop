@@ -106,7 +106,7 @@ AWS_SECRET_ACCESS_KEY=<SECRET-KEY>
 ### Step 3: Configure serverless
 **A) Configure serverless framework with AWS
 ```
-$ serverless config credentials --provider aws --key <ACCESS-KEY-ID> --secret <SECRET-KEY> --profile <any-profile-name>
+$ serverless config credentials --provider aws --key <ACCESS-KEY-ID> --secret <SECRET-KEY> --profile <any-profile-name> --o
 $ cat ~/.aws/credentials
 ```
 ```
