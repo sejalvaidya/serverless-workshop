@@ -37,6 +37,13 @@ npm install -g serverless
 
 ## Deploy
 
+**Optional Setup**:
+
+`aws sso login --profile <profile-name>`
+
+`yawsso`
+
+
 In order to deploy the endpoint simply run
 
 ```bash
