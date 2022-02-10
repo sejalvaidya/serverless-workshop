@@ -10,7 +10,7 @@
     "gulp-util": "3.0.8",
     "i": "0.3.6",
     "node-gyp": "^6.0.1",
-    "node-sass": "^4.13.0",
+    "node-sass": "^7.0.0",
     "yarn": "^1.21.1"
   },
   "scripts": {
